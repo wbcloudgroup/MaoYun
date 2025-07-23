@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MaoYun - 网络代理工具</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom right, #D2C7F6, #EFC6B7, #F4F2C1);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      padding: 60px 20px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #000;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 40px;
+      color: #444;
+    }
+    p, pre {
+      max-width: 800px;
+      margin: 0 auto 1em;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    section {
+      padding: 40px 0;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-top: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+    code, pre {
+      background-color: #f6f8fa;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MaoYun</h1>
+    <p>Power by sing-box-lib v1.11.11</p>
+    <p><a href="https://github.com/EbrahimTahernejad/sing-box-lib" target="_blank">GitHub · sing-box-lib</a></p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center">功能特性</h2>
+    <p>MaoYun 是基于 <code>sing-box-lib</code> 开发的网络代理工具，支持用户自定义配置并一键启动 VPN 服务。</p>
+    <p><strong>支持协议：</strong> SS, TUIC, VMess, VLESS, Trojan, Hysteria, Hysteria2</p>
+    <p><strong>配置格式：</strong> JSON</p>
+    <pre>{
+  "log": {}, "dns": {}, "ntp": {}, "certificate": {},
+  "endpoints": [], "inbounds": [], "outbounds": [],
+  "route": {}, "services": [], "experimental": {}
+}</pre>
+    <p><strong>扩展支持：</strong></p>
+    <ul style="text-align:center">
+      <li>DNS 设置、路由规则、Fake IP 功能</li>
+      <li>Clash API 支持 Yacd 面板访问</li>
+      <li>V2Ray API 支持统计、状态查询</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 style="text-align:center">隐私政策</h2>
+    <p><strong>本地配置存储：</strong>用户导入或生成的配置文件将保存在本地设备，不会上传或分享。</p>
+    <p><strong>本地日志记录：</strong>运行中产生的日志也仅保存在本地，用户可自行查看与删除。</p>
+    <p><strong>不收集用户隐私：</strong>不采集 VPN 使用过程中的任何数据，包括访问内容、IP、连接记录等。</p>
+    <p><strong>用户责任：</strong>请确保您的代理配置来源合法，使用行为符合所在地法律法规。</p>
+  </section>
+
+  <section>
+    <h2 style="text-align:center">联系方式</h2>
+    <p>如您有任何疑问或建议，欢迎通过以下方式联系：</p>
+    <p>📧 <a href="mailto:maoios@wbcloudgroup.us">maoios@wbcloudgroup.us</a></p>
+  </section>
+
+  <footer>
+    © 2025 MaoYun · WBCloudGroup
+  </footer>
+</body>
+</html>
